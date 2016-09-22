@@ -1,0 +1,70 @@
+* {
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+h1, pre {
+  color: #2a2a2a;
+}
+
+h1 {
+  margin: 1em 0 2em;
+  color: #51712d;
+}
+
+#wrapper {
+  padding: 1em;
+  overflow-x: hidden;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.3em;
+  max-width: 600px;
+}
+
+pre.smaller {
+  font-size: 11px;
+}
+
+.iphone-screenshots {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.iphone-screenshots-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.iphone-screenshot {
+  padding: 1em;
+  margin: 1em;
+}
+.iphone-screenshot img {
+  width: 100%;
+  height: auto;
+}
+
+.download-container {
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+}
+
+@media only screen and (min-width : 466px) {
+  .iphone-screenshots-row {
+    flex-direction: row;
+  }
+  .iphone-screenshots-row .iphone-screenshot img {
+    max-width: 200px;
+  }
+}
